@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import CreateBoard from "./create-board";
 
 interface BoardListProps {
   orgId: string;
@@ -30,10 +31,10 @@ const BoardList = ({ orgId, query }: BoardListProps) => {
     return (
       <div className="h-full flex flex-col items-center justify-center">
         <h2 className="font-semibold">Create your first board!</h2>
-        <p className="text-muted-foreground text-sm mt-2">Start by creating a board for your organization</p>
-        <Button className="mt-6" size="lg">
-          Create board
-        </Button>
+        <p className="text-muted-foreground text-sm mt-2">
+          Start by creating a board for your organization
+        </p>
+        <CreateBoard />
       </div>
     );
 
